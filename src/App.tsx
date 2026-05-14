@@ -6,6 +6,7 @@ import { parseLrcToLines, parseSrtToLines } from './utils/parseLyrics';
 import { AlignedWord } from './types';
 import { Play, Pause, ChevronDown, Download, Music, Key, FileText, Clock, Trash2, Library, Search, List, AlertCircle, CloudLightning } from 'lucide-react';
 import './globals.css'
+import { Footer } from './components/Footer'
 const isValidUUID = (uuid: string) => /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/.test(uuid);
 
 interface HistoryItem {
@@ -705,6 +706,7 @@ export default function App() {
             </div>
          </div>
       </main>
+      <Footer />
     </div>
   );
 }
